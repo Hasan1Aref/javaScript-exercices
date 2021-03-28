@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>input :<input onchange="myfunction()" id="t1" type="text" placeholder="enter your name"></label><br>
+    <label id="out">output :</label>
+    <script>
+        const myfunction = () => {
+            var name = document.getElementById("t1").value;
+            document.getElementById("out").innerHTML = "output :Hello " + name;
+        }
+
+    </script>
+</body>
+
+</html>
