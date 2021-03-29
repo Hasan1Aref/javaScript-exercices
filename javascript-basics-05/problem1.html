@@ -12,9 +12,10 @@
     <script>
         const myfunction = () => {
             var name = document.getElementById("t1").value;
-            document.getElementById("out").innerHTML = "output :Hello " + name;
+            if (name.toLowerCase()=="alice" || name.toLowerCase()=="bob") {
+                document.getElementById("out").innerHTML = "output :Hello " + name;
+            } else document.getElementById("out").innerHTML = "output :Hello stranger";
         }
-
     </script>
 </body>
 
