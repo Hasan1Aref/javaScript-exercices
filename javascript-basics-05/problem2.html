@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-      var a=prompt("enter a number ")-0;
-      var b=a;
-      var sum=0;
-      for(let i=1;i<=a;i++){
-          sum+=i;
-      }
-      alert("sum from 1 to "+b+"="+sum);
+        var a = prompt("enter a number ") - 0;
+        var b = a;
+        var sum = 0;
+        for (let i = 1; i <= a; i++) {
+            if (i % 3 == 0 || i % 5 == 0) {
+                sum += i;
+            }
+        }
+        alert("sum of (multiples of 3 or 5) from 1 to " + b + "=" + sum);
     </script>
 </body>
+
 </html>
